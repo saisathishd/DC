@@ -1,0 +1,41 @@
+//daily challenge date:01/10/2022...:)
+import java.util.*;
+public class hello {
+
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int row,col,sum=0;
+        row=in.nextInt();
+        col=in.nextInt();
+        int a[][];
+        a=new int[row][col];
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                a[i][j]=in.nextInt();
+            }
+        }for(int i=1;i<row-1;i++){
+            for(int j=1;j<col-1;j++){
+                sum=sum+a[i][j];
+            }
+        }System.out.print(sum);
+
+    }
+}
+
+
+C:\Users\saisa\OneDrive\Desktop\java>javac hello.java
+
+C:\Users\saisa\OneDrive\Desktop\java>java hello
+//input:
+5 6
+15 56 45 45 12 13
+45 65 7 6 45 5
+78 89 45 45 65 45
+74 12 36 45 78 96
+88 25 24 26 24 26
+//output:
+538
+here the elimination the first row and first col and also last row and last col in the middle values are added and print as the output...:)
+
+here the middle values are: 65,7,6,45,89,45,45,65,12,36,45,78
+add the mid values 65+7+6+45+89+45+45+65+12+36+45+78=538.
