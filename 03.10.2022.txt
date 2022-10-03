@@ -1,0 +1,42 @@
+Daily challenges Date:03/10/2022...:)
+//java language...
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner my=new Scanner(System.in);
+        int n=my.nextInt();
+        int[] arr=new int[n];
+        int sum=0;
+        for(int i=0;i<n;i++){
+            arr[i]=my.nextInt();
+            System.out.print(sum);
+            System.out.print(" ");
+            sum+=arr[i];
+        }
+    }
+}
+
+c language...
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int arr[100];
+    int s=0;
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    printf("%d ",s);
+    s+=arr[i];
+    }
+    return 0;
+}
+
+Input:
+5
+2 4 6 8 10
+
+Output:
+0 2 6 12 20
