@@ -1,0 +1,36 @@
+//Daily challange Date:06.10.2022....:)
+
+//java language...
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+        Scanner my=new Scanner(System.in);
+        int n=my.nextInt();
+        int ctr=0,val=1;
+        for(int i=0;i<n;i++){
+            if(val<=n){
+                val*=10;
+                ctr++;
+            }
+        }System.out.print(ctr);
+    }
+}
+
+//c language...
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int n,val=1,ctr=0;
+scanf("%d",&n);
+for(int i=0;i<n;i++){
+    if(val<=n){
+        val*=10;
+        ctr++;
+    }
+}printf("%d",ctr);
+}
