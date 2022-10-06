@@ -1,0 +1,56 @@
+dc - 05.10.2022
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my=new Scanner(System.in);
+		int n=my.nextInt();
+		int t=0;
+		for(int i=n+1;i<=100;i++){
+		    t=0;
+		    for(int j=2;j<i;j++){
+		        if(i%j==0){
+		            t=1;
+		            break;
+		        }
+		    }
+		    if(t==0){
+		        System.out.print(i);
+		        break;
+		    }
+		}
+
+	}
+}
+
+
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my=new Scanner(System.in);
+		int n=my.nextInt();
+		while(true){
+		    int t=0;
+		    for(int j=2;j<=Math.sqrt(i);j++){
+		        if(i%j==0){
+		            t=1;
+		            break;
+		        }
+		    }
+		    if(t==0){
+		        System.out.print(i);
+		        break;
+		    }i++;
+		}
+
+	}
+}
+
+
+Input:
+8
+Output:
+11
+
