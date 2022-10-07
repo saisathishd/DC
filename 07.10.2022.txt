@@ -1,0 +1,38 @@
+Daily Challange...:)
+Date:07.10.2022....:)
+The program given below performs a certain logic but the lines are jumbled.
+Reorder the lines so that the program executes successfully.
+
+error code:
+
+#include<stdio.h> 
+int main() {
+    int N, ctr=0, till; 
+    while(ctr <= till) {
+        scanf("%d",&N);
+    } 
+    ctr++;
+    ctr++;
+    till = N%10;
+    ctr++; 
+    if(till!=0) {
+        printf("%d",ctr--);
+    }
+}
+
+Code Here:
+
+#include<stdio.h>
+
+int main()
+{
+    int N,s=0;
+    scanf("%d",&N);
+    s=N%10;
+    if(s==0){
+        printf("0");
+        return 0;
+    }for(int i=1;i<=s;i++){
+        printf("%d",i);
+    }
+}
