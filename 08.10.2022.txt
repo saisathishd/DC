@@ -1,0 +1,37 @@
+//Daily Cahllange Date:08.10.2022....:)
+
+//Java language....:)
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my=new Scanner(System.in);
+		int n,s=0;
+		do{
+		n=my.nextInt();
+		if(n%2==0){
+		    s+=n;
+		}
+		}while(n!=10);
+		System.out.print(s);
+    }
+}
+
+
+C language....:)
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int n,s=0;
+do{
+    scanf("%d",&n);
+    if(n%2==0){
+        s+=n;
+    }
+}while(n!=10);
+printf("%d",s);
+}
