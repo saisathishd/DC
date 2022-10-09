@@ -1,0 +1,25 @@
+Daily challenge Date:09.10.2022...:)
+
+C language.....:)
+
+#include<stdio.h>
+
+int main()
+{
+    int N,value=0;
+    scanf("%d", &N);
+    int numberCount[1001]={0};
+    for(int ctr =0; ctr <N; ctr++){
+        if(value==1)break;
+        scanf("%d", &numberCount[ctr]);
+        for(int alt=0;alt<ctr;alt++){
+            if(numberCount[ctr]== numberCount[alt]){
+                printf("NO");
+                value=1;
+                break;
+            }
+        }
+    }if(value==0)
+    printf("YES");
+    return 0;
+}
