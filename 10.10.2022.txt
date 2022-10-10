@@ -1,0 +1,26 @@
+Daily Challange Date:10.10.2022...:)
+
+java language....:)
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my=new Scanner(System.in);
+		int n=my.nextInt();
+		int x=my.nextInt();
+		int d=0;
+		for(int i=1;i<=n;i++){
+		    int t=i;
+		    while(t>0){
+		        if(t%10==x){
+		            System.out.print(i);
+		            System.out.print(" ");
+		            d=1;
+		            break;
+		        }t/=10;
+		    }
+		}if(d==0)
+		System.out.print("-1");
+	}
+}
