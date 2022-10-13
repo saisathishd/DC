@@ -1,0 +1,40 @@
+Daily challange Date:13.10.2022...:)
+
+Odd Frequency Characters in String (Error Identification)
+
+The program must accept the value of a string S as the input.
+The program must print only the odd frequency alphabets of the string in ascending order as the output.
+There are logical errors in the program and hence it does not print the desired output. 
+Rectify the logical errors so that the program prints the expected output.
+
+
+
+Code Here:
+
+C - language....:)
+
+#include<stdio.h>
+int main()
+{
+    char str[101], alphaCount[127] = {0};
+    int len;
+    scanf("%s%n", str, &len);
+    for(int index = 0; index < len; index++)
+    {
+        alphaCount[str[index]]++;
+    }
+    for(int index = 'a'; index <= 'z'; index++)
+    {
+        if(alphaCount[index] % 2 != 0)
+        {
+                printf("%c", index);
+        }
+    }return 0;
+}
+
+
+Input:
+aabbbbccddeee
+
+Output:
+e
