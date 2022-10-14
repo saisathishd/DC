@@ -1,0 +1,43 @@
+Daily challange Date:14.10.2022...:)
+
+java - language....:)
+
+import java.util.*;
+public class Hello {
+    public static void main(String args[]){
+        Scanner my=new scanner(System.in);
+        int m,n;
+        m=my.nextInt();
+        n=my.nextInt();
+        while(m!=n){
+            if(m<n){
+                System.out.print(m);
+                m++;
+            }else{
+                System.out.print(n);
+                n++;
+            }
+        }System.out.print(m);
+    }
+}
+
+c - language...:)
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int n,m;
+scanf("%d %d",&m,&n);
+while(m!=n){
+    if(m<n){
+        printf("%d",m);
+        m++;
+    }else{
+        printf("%d",n);
+        n++;
+    }
+}printf("%d",m);
+}
+
