@@ -1,3 +1,7 @@
+Daily challange Date:15.10.2022...:)
+
+Question Here:
+
 The program given below performs a certain logic but the lines are jumbled. 
 Reorder the lines so that the program runs successfully.
 
