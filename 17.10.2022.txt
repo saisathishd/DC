@@ -1,0 +1,85 @@
+DAILY CHALLENGE DATE:17.10.2022....:)
+
+ProgramID- 7379 
+
+SkillRack
+
+Repeated Integers CountThe program must accept N integers as the input. 
+The program must print the number of integer values repeated as the output.Boundary Condition(s):2 <= N <= 1000
+
+Input Format:
+The first line contains N.The second line contains the N integer values separated by a space.
+
+Output Format:
+The first line contains the integer value representing the repeated integer values count.
+
+Example Input/Output 1:
+
+Input:
+9
+10 20 20 30 40 10 10 50 99
+
+Output:
+3
+
+Explanation:The repeated values are 20 10 10.Hence the output is 3
+
+Example Input/Output 2:
+
+Input:
+5
+1 2 3 4 2
+
+Output:
+1
+
+
+CODE HERE:
+
+Java language...:)
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my = new Scanner(System.in);
+		int n=my.nextInt();
+		int c=0;
+		int[] arr=new int[n];
+		int x=0;
+		for(int i=0;i<n;i++){
+		    arr[i]=my.nextInt();
+		    if(arr[i]>x){
+		        x=arr[i];
+		    }
+		}int[] arr1=new int[x+1];
+		for(int i=0;i<n;i++){
+		    arr1[arr[i]]++;
+		}
+		for(int i=0;i<arr1.length;i++){
+		    if(arr1[i]>1){
+		        c+=arr1[i]-1;
+		    }
+		}System.out.print(c);
+	}
+}
+
+
+C - language...:)
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int c=0,n,arr[n],arr1[n];
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+        arr1[arr[i]]++;
+        if(arr1[arr[i]]>1){
+            c++;
+        }
+    }printf("%d",c);
+}
+
