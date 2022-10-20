@@ -1,0 +1,70 @@
+DAILY CHALLENGE
+
+Program ID- 7377 SkillRack
+
+Distinct Integers
+
+The program must accept N integers as the input. 
+The program must print only the distinct values ignoring the repetition of the values which have appeared earlier in the input sequence.
+Boundary Condition(s):2 <= N <= 100
+
+Input Format:
+The first line contains N.The second line contains the N integer values separated by a space.
+
+Output Format:
+The distinct integer values in the same order of occurrence as the input sequence.
+
+Example Input/Output 1:
+Input:
+6
+10 20 20 30 40 10
+
+Output:
+10 20 30 40
+
+Example Input/Output 2:
+Input:
+4
+3 4 2 1
+Output:
+3 4 2 1
+
+
+Code here:
+
+Java language...:)
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my=new Scanner(System.in);
+		int n=my.nextInt();
+		int[] a=new int[n];
+		int[] b=new int[100];
+		for(int i=0;i<n;i++){
+		    a[i]=my.nextInt();
+		    b[a[i]]++;
+		    if(b[a[i]]==1)
+		    System.out.print(a[i]+" ");
+		}
+	}
+}
+
+c - language....:)
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n],b[100]={0};
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+        if(b[a[i]]==0)
+        printf("%d ",a[i]);
+        b[a[i]]++;
+    }
+}
