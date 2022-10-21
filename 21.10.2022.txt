@@ -1,0 +1,48 @@
+DAILY CHALLENGE
+
+ProgramID- 7390 SkillRack
+
+Jumbled Program - 14
+
+The program given below performs a certain logic but the lines are jumbled. 
+Reorder the lines so that the program runs successfully.
+
+...................................................................................................................
+Jumbled Code:
+
+int num, X;
+countDivisors(num, X);
+#include<stdio.h>
+printf("%d", count);
+void countDivisors(int N, int X){
+ {
+ if(N % ctr == 0 && ctr % X == 0) {
+ for(ctr = 1; ctr <= N; ctr++)
+ } 
+}
+}
+count++;
+int main(){
+}int count = 0, ctr;
+scanf("%d %d", &num, &X);
+
+.....................................................................................................................
+Code Here:
+
+#include<stdio.h>
+void countDivisors(int N, int X){
+int count = 0, ctr;
+    for(ctr = 1; ctr <= N; ctr++){
+        if(N % ctr == 0 && ctr % X == 0){
+        count++;
+        }
+    }
+    printf("%d", count);
+}
+int main()
+{
+int num, X;
+scanf("%d %d", &num, &X);
+countDivisors(num, X);
+}
+.......................................................................................................................
