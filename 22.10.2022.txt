@@ -1,0 +1,49 @@
+Daily Challanges Date:22.10.2022....:)
+
+Flow Chart Diagram....:)
+
+Code Here:
+
+Java language....:)
+ 
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my=new Scanner(System.in);
+		String str=my.nextLine();
+		char arr[]=str.toCharArray();
+		int len=str.length();
+		int index=0;
+		while(index<len){
+		    int cmp=index+1;
+		    while(cmp<len){
+		        if(Math.abs(arr[index]-arr[cmp])==Math.abs(index-cmp)){
+		            System.out.print(arr[index]+""+arr[cmp]);
+		        }cmp++;
+		    }index++;
+		}
+	}
+}
+
+
+C language....:)
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+char str[101];
+scanf("%s",str);
+int len=strlen(str);
+int i=0;
+while(i<len){
+    int cmp=i+1;
+    while(cmp<len){
+        if(abs(str[i]-str[cmp])==abs(i-cmp)){
+            printf("%c%c",str[i],str[cmp]);
+        }cmp++;
+    }i++;
+}
+}
