@@ -1,0 +1,21 @@
+Daily challange...:)
+
+Java Language...:)
+
+import java.util.*;
+public class Hello {
+    public static void main(String args[]){
+        Scanner my=new Scanner(System.in);
+        int n=my.nextInt();
+        int ctr=1;
+        while(ctr<=n/2){
+            if(ctr<n/2){
+                System.out.print(2*ctr+" ");
+                ctr++;
+            }else{
+                System.out.print(3*ctr+" ");
+                ctr++;
+            }
+        }
+    }
+}
