@@ -1,0 +1,77 @@
+Daily Challange Date:24.10.2022...:)
+
+Flow chat problem....:)
+
+Code Here:
+
+Java Language....:)
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner ji=new Scanner(System.in);
+		char[] s=new char[101];
+		int l,i=0;
+		s=ji.next().toCharArray();
+		l=s.length;
+		while(i<l){
+		    stringReplace(s[i]);
+		    i++;
+		}
+	}
+	static void stringReplace(char c){
+	    if(isVowel(c)){
+	        System.out.print(c);
+	    }else{
+	        if(c=='z'){
+	            System.out.print('b');
+	        }else{
+	            if(isVowel((char)(c+1))){
+	                System.out.print((char)(c+2));
+	            }else{
+	                System.out.print((char)(c+1));
+	            }
+	        }
+	    }
+	}static boolean isVowel(char c){
+	    c=Character.toLowerCase(c);
+	    return c=='a'||c=='e'||c=='i'||c=='o'||c=='u';
+	}
+}
+
+
+C - language...:)
+
+#include<stdio.h>
+#include<stdlib.h>
+int isVowel(char c){
+    c=tolower(c);
+    return (c=='a'||c=='e'||c=='i'||c=='o'||c=='u');
+}
+char stringReplace(char ch){
+    if(isVowel(ch))
+        return ch;
+    else if(ch=='z')
+        return 'b';
+    else if(isVowel(ch+1))
+        return ch+2;
+    else
+        return ch+1;
+}
+int main()
+{
+    char str[101];
+    scanf("%s",str);
+    int len=strlen(str);
+    int index=0;
+    while(index<len){
+        str[index]=stringReplace(str[index]);
+        printf("%c",str[index]);
+        index++;
+    }
+}
+
+.............................................................................................................................................
+
+
