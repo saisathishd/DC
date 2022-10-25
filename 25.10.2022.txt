@@ -1,0 +1,65 @@
+DAILY CHALLENGE DATE: 25.10.2022....:)
+
+Program iD-7376
+
+SkillRack
+
+Sum of Frequency of Alphabets (Error identification)
+
+The program must accept the value of a string S and an integer X as the input.
+The program must print the sum of frequency of each alphabets raising to the power of X as the output.
+There are logical errors in the program and hence it does not print the desired output. 
+Rectify the logical errors so that the program prints the expected output.
+
+............................................................................................................................................................
+
+Error code:
+
+#include<stdio.h>
+
+int main()
+{
+    char str[101], alphaCount[127] = {0};
+    int len, X, index = 0, result = 0;
+    scanf("%s%n %d",str, len, &X);
+    while(str[index]!='\0')
+    {
+        alphaCount[str[index]]--;
+        index++;
+    }
+    for(char start='a'; start <= 'z'; start++)
+    {
+        if(alphaCount[start] >= 0)
+        {
+            result = pow(alphaCount[start], X);
+        }
+    }
+    printf("%d", result);
+}
+..............................................................................................................................................................
+
+Code Here:)
+
+#include<stdio.h>
+
+int main()
+{
+    char str[101], alphaCount[127] = {0};
+    int X, index = 0, result = 0;
+    scanf("%s %d",str,&X);
+    while(str[index]!='\0')
+    {
+        alphaCount[str[index]]++;
+        index++;
+    }
+    for(char start='a'; start <= 'z'; start++)
+    {
+        if(alphaCount[start] >= 0)
+        {
+            result =result+ pow(alphaCount[start], X);
+        }
+    }
+    printf("%d", result);
+}
+
+.................................................................................................................................................................
