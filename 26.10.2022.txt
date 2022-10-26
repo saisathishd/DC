@@ -1,0 +1,59 @@
+DAILY CHALLENGE DATE:26.10.2022...:)
+
+ProgramID-7308
+
+SkillRack
+
+Jumbled Program - 004
+
+The program given below performs a certain logic but the lines are jumbled. Reorder the lines so that the program runs successfully.
+
+....................................................................................................................................
+
+Error Code:
+
+#include<stdio.h>
+
+return 0;
+
+int main(){
+
+scanf("%d", &val);
+
+printf("\n");
+for (col-0; col<C; col++)
+if(col <- row){
+scanf("%d %d", &R, &C);
+}
+for(row=; row<R; row++)
+{
+printf("%d", val); 
+int row, col, R, C, val;
+{
+int matrix[R][C];
+}
+}
+}
+............................................................................................................................................
+
+Code Here:
+
+#include<stdio.h>
+int main()
+{
+    int row, col, R, C, val;
+    scanf("%d %d", &R, &C);
+    int matrix[R][C];
+    for(row=0; row<R; row++){
+        for(col=0; col<C; col++){
+            scanf("%d", &val);
+            if(col <= row){
+                printf("%d ", val);
+            }
+        }
+    printf("\n");
+    }
+return 0;
+}
+
+...........................................................................................................................................
