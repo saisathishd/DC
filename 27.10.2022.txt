@@ -1,0 +1,36 @@
+DAILY CHALLENGE DATE:27.10.2022....:)
+
+ProgramID 7347
+
+SkilRack
+
+Count of X (Error Identifiction)
+
+The program must accept an integer N as the input. The program must print the count of X where N XOR X is equal to the N OR X where range of X is defined by 0 <= X <= N.
+
+There are logical errors in the program and hence it does not print the desired output. Rectify the logical
+
+errors so that the program prints the expected output.
+
+
+........................................................................................................................................................................
+Code Here:
+
+C language...:)
+
+#include<stdio.h>
+int main()
+{
+    int N, count=0;
+    scanf("%d", &N);
+    for(int X = 0; X <= N; X++)
+    {
+        if((N^X) == (N|X))
+        {
+            count++;
+        }
+    }
+    printf("%d", count);
+}
+
+.........................................................................................................................................................................
