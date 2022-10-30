@@ -1,0 +1,31 @@
+Daily Challange Date:29.10.2022....:)
+
+..........................................................................................................................
+Code Here:
+
+import java.util.*;
+public class Hello {
+    public static void main(String[] args){
+        Scanner my=new Scanner(System.in);
+        int n=my.nextInt();
+        int[] arr=new int[n];
+        int c=0,i=0;
+        while(i<n){
+            arr[i]=my.nextInt();
+            i++;
+        }i=0;
+        while(i<n-1){
+            int cmpi=i+1;
+            while(cmpi<n){
+                if((arr[i]%arr[cmpi]==0)||(arr[cmpi]%arr[i]==0)){
+                    c++;
+                    cmpi++;
+                }else{
+                    cmpi++;
+                }
+            }i++;
+        }System.out.print(c);
+    }
+}
+
+............................................................................................................................

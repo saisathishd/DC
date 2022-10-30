@@ -1,0 +1,37 @@
+//Daily Challange Date: 28.10.2022..:)
+
+Code Here:
+
+import java.util.*;
+public class Hello {
+    public static void main(String[] args) {
+        Scanner ss = new Scanner(System.in);
+        char[] str1 = new char[101];
+        char[] str2 = new char[101];
+        str1 = ss.next().toCharArray();
+        char[] temp=new char[5];
+        for(int i=0;i<2;i++){
+            temp[i]=str1[i];
+        }
+        str2 = ss.next().toCharArray();
+        int len1 = str1.length;
+        int index = 0, count = 0;
+        int k=0;
+        for(int i=2;i<len1;i++){
+            str1[k++]=str1[i];
+        }
+        for(int i=0;i<2;i++){
+            str1[k++]=temp[i];
+        }
+        while (index < len1){
+            if(str2[index] == str1[index]) {
+                count++;
+                index++;
+            } else {
+                index++;
+            }
+        }
+        if (count == len1) System.out.println("Yes");
+        else System.out.println("No");
+    }
+}
