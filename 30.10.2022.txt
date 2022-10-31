@@ -1,0 +1,31 @@
+Daily challenge Date:30.10.2022...:)
+
+Code Here:
+
+............................................................................................................................
+Java Language....:)
+
+import java.util.*;
+public class Hello {
+    public static void main(String[] args){
+        Scanner my =new Scanner(System.in);
+        long n=my.nextInt();
+        int f=0;
+        int[] arr=new int[10];
+        while(n>0){
+            arr[(int)(n%10)]++;
+            n/=10;
+        }int ctr=1;
+        while(ctr<=9){
+            if(arr[ctr]>ctr){
+                f=1;
+                System.out.print("No");
+                break;
+            }else{
+                ctr++;
+            }
+        }if(f==0) System.out.print("Yes");
+    }
+}
+
+..............................................................................................................................

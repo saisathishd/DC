@@ -1,0 +1,25 @@
+Daily challenge Date:31.10.2022.....:)
+
+Code Here...:)
+
+Java Language....:)
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my = new Scanner(System.in);
+		char ch=my.next().charAt(0);
+		int n=my.nextInt();
+		while(n>0){
+		    System.out.print(ch);
+		    ch++;
+		    if((ch-1)=='z'){
+		        ch='a';
+		    }n--;
+		}
+
+	}
+}
+
+.............................................................................
