@@ -1,0 +1,50 @@
+//Daily challenge Date:30/09/2022...:)
+import java.util.*;
+public class hello{
+public static void main(String args[]){
+Scanner my=new Scanner(System.in);
+int n=my.nextInt();
+for(int i=0;i<n;i++){
+for(int j=0;j<n;j++){
+if(i==0||i==n-1||j==0||j==n-1||i==j||i==n-1-j){
+System.out.print("*");
+}else{
+System.out.print("-");
+}
+}System.out.println(" ");
+}
+}
+}
+
+run:)
+C:\Users\saisa\OneDrive\Desktop\java>javac hello.java
+
+C:\Users\saisa\OneDrive\Desktop\java>java hello
+//input
+5
+//output
+*****
+**-**
+*-*-*
+**-**
+*****
+
+C:\Users\saisa\OneDrive\Desktop\java>java hello
+//input
+15
+//output
+***************
+**-----------**
+*-*---------*-*
+*--*-------*--*
+*---*-----*---*
+*----*---*----*
+*-----*-*-----*
+*------*------*
+*-----*-*-----*
+*----*---*----*
+*---*-----*---*
+*--*-------*--*
+*-*---------*-*
+**-----------**
+***************
