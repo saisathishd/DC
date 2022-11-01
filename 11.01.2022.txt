@@ -1,0 +1,47 @@
+Daily Challenge Date:11.01.2022...:)
+
+.......................................................................................................
+Code Here:
+
+Java Language....:)
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my=new Scanner(System.in);
+		int n,x;
+		n=my.nextInt();
+		x=my.nextInt();
+		int cuv,s=0,ctr=1;
+		while(ctr<=n){
+	        cuv=my.nextInt();
+	       s=s+(int)Math.pow(x,cuv);
+	        ctr++;
+	    }
+	    System.out.print(s/x);
+	}
+}
+
+..........................................................................................................
+
+Code Here:
+
+C language.....:)
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    int n,x;
+    scanf("%d %d",&n,&x);
+    int cuv,s=0,ctr=1;
+    while(ctr<=n){
+        scanf("%d",&cuv);
+        s+=pow(x,cuv);
+        ctr++;
+    }printf("%d",s/x);
+}
+
+.............................................................................................................
