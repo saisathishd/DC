@@ -1,0 +1,58 @@
+DAILY CHALLENGE DATE:11.03.2022....:)
+
+ProgramID- 7498 
+
+SkillRack 
+
+First and Last X Characters 
+
+The program must accept a string S and an integer X as the input. The program must print the first X characters and the last X characters in S as the output. 
+Boundary Condition(s): 3 <= Length of S <= 100 1 <= X <= Length of S/2 
+
+Input Format:
+
+The first line contains the string S. The second line contains the integer X. 
+
+Output Format: 
+
+The first line contains the first X characters and the last X characters in S. 
+
+Example Input/Output 1: 
+
+Input: 
+transport 
+3 
+
+Output: 
+traort
+
+Explanation:
+The first 3 characters in the string transport are t r a The last 3 characters in the string transport are o r t Hence the output is traort 
+
+Example Input/Output 2: 
+
+Input: 
+chennai 
+2 
+
+Output: 
+chai
+
+....................................................................................................................................................
+
+Code Here:
+
+Java Language....:)
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my=new Scanner(System.in);
+		String s=my.next();
+		int n=my.nextInt();
+		System.out.print(s.substring(0,n)+s.substring(s.length()-n));
+	}
+}
+
+...................................................................................................................................................
