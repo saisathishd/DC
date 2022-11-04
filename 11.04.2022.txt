@@ -1,0 +1,64 @@
+DAILY CHALLENGE DATE:11.04.2022...:)
+
+ProgramID- 7531 
+
+SkillRack
+
+Next Decimal Equivalent of Binary 
+
+The program must accept the binary representation X as the input. The program must print the binary representation of the next decimal equivalent of X as the output. 
+Boundar Condition(s): 1 <= X <= 10^18 
+
+Input Format: 
+The first line contains the given binary representation. 
+
+Output Format: 
+The first line contains the binary representation of the next decimal equivalent of X. 
+
+Example Input/Output 1:
+
+Input: 
+101 
+
+output:
+110 
+
+Explanation: 
+The decimal equivalent of 101 is 5. 
+The next decimal equivalent of 5 is 6. 
+The binary representation of 6 is 110. 
+Hence the output is 110 
+
+Example Input/Output 2:
+
+Input: 
+11111 
+
+Output: 
+100000
+
+.............................................................................................................................................................
+
+Code Here:
+
+Java language....:)
+
+import java.util.*;
+public class Hello {
+
+    public static void main(String[] args) {
+		Scanner my=new Scanner(System.in);
+		long n=my.nextLong();
+		long r=0,a=0,i=0;
+		while(n>0){
+		    r=n%10;
+		    a+=r*Math.pow(2,i);
+		    n/=10;
+		    i++;
+		}
+		a++;
+		String s=Long.toBinaryString(a);
+		System.out.println(s);
+	}
+}
+..........................................................................................................................................................
